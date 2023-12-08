@@ -1,0 +1,110 @@
+/*
+ * Autor: Martín Fernández González
+ * Fecha: 1 de Octubre de 2023
+ * Hoja de estilos en la que se definen los estilos generales de todos los html
+ */
+
+/* 
+ * Estilos para el contenedor body
+ * Especificidad -> (0,0,1)
+ */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #333;
+  color: white;
+}
+
+/* 
+ * Estilos para el contenedor header
+ * Especificidad -> (0,0,1)
+ */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1.25em;
+  text-align: center;
+}
+
+/* 
+ * Estilos para el contenedor section
+ * Especificidad -> (0,0,1)
+ */
+section {
+  text-align: center;
+  background-color: #fff;
+  color:black;
+  padding: 0.625em;
+  border-radius: 0.313em;
+  box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.2);
+}
+
+/*
+ * Propiedades del título principal de la pagina
+ * Especificidad -> (0,0,1)
+ */
+h1 {
+  font-size: 2.25em;
+  margin: 0;
+}
+
+/* 
+ * Estilos para los h2
+ * Especificidad -> (0,0,1)
+ */
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0 2.5em 0;
+  text-align: center;
+}
+
+/* 
+ * Estilos para las listas no ordenadas
+ * Especificidad -> (0,0,1)
+ */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* 
+ * Estilos para los elementos de las listas
+ * Especificidad -> (0,0,1)
+ */
+li {
+  margin: 0.625em 0;
+}
+
+/* 
+ * Estilos para los elementos de los parrafos
+ * Especificidad -> (0,0,1)
+ */
+p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 81.25em){
+  section video:nth-child(2),
+  section video:nth-child(3){
+    margin-bottom: 1.5em;
+  }
+}
+
+@media screen and (max-width: 50em){
+  img, video{
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 40em){
+  body > section:nth-of-type(2),
+  body > section:nth-of-type(3){
+    overflow-x: auto;
+  }
+
+  table{
+    width:100%;
+    border-collapse: collapse;
+  }
+}

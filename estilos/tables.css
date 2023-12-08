@@ -1,0 +1,80 @@
+/*
+ * Autor: Martín Fernández González
+ * Fecha: 1 de Octubre de 2023
+ * Hoja de estilos en la que se definen los estilos de las tablas
+ */
+
+/* 
+ * Estilos para la tabla en general
+ * Especificidad -> (0,0,1)
+ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0.125em solid #000;
+  margin: 1.25em auto 2.5em auto;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: black;
+}
+  
+/* 
+ * Estilos para los th
+ * Especificidad -> (0,0,1)
+ */
+th {
+  background-color: #FFB442;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.625em;
+  border: 0.063em solid #000;
+}
+
+th img, th {
+  vertical-align: middle;
+}
+  
+/* 
+ * Estilos para la los td
+ * Especificidad -> (0,0,1)
+ */
+td {
+  background-color: #fff;
+  color: #000;
+  padding: 0.625em;
+  border: 0.063em solid #000;
+}
+  
+/* 
+ * Estilos para la tr
+ * Especificidad -> (0,1,1)
+ */
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+@media screen and (max-width: 83em){
+  section table th,
+  section table tr,
+  section table td{
+      font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 40em){
+  th, td {
+    border-bottom: 0.063em solid #ddd;
+  }
+
+  th{
+    text-align: center;
+  }
+
+  td{
+    text-align: left;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+}

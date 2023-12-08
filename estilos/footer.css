@@ -1,0 +1,63 @@
+/*
+ * Autor: Martín Fernández González
+ * Fecha: 1 de Octubre de 2023
+ * Hoja de estilos en la que se definen los estilos del pie de página
+ */
+
+/* 
+ * Estilos para el contenedor footer
+ * Especificidad -> (0,0,1)
+ */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.625em;
+}
+
+/* 
+ * Estilos para los elementos p del footer
+ * Especificidad -> (0,0,2)
+ */
+footer p {
+    margin: 0.625em 0;
+}
+
+/* 
+ * Estilos para los elementos a del footer
+ * Especificidad -> (0,0,2)
+ */
+footer a {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.625em;
+}
+
+/* 
+ * Estilos para el evento hover de los elementos a del footer
+ * Especificidad -> (0,1,2)
+ */
+footer a:hover {
+    color: #FFB442;
+    background-color: #333;
+}
+
+/* 
+ * Estilos para los elementos img del footer
+ * Especificidad -> (0,0,2)
+ */
+footer img {
+    max-width: 1.5em;
+    vertical-align: middle;
+    margin-right: 0.313em;
+}
+
+@media screen and (max-width: 30em){
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+  }

@@ -1,0 +1,47 @@
+/*
+ * Autor: Martín Fernández González
+ * Fecha: 1 de Octubre de 2023
+ * Hoja de estilos en la que se definen los estilos de las listas
+ */
+
+/* 
+ * Estilos para las listas no ordenadas
+ * Especificidad -> (0,0,1)
+ */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 
+ * Estilos para los elementos de las listas no ordenadas
+ * Especificidad -> (0,0,2)
+ */
+ul li {
+    margin: 0;
+    padding: 0.625em 0;
+    border-bottom: 0.063em solid #ddd;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 
+ * Estilos para el ultimo elemento de la lista
+ * Especificidad -> (0,1,2)
+ */
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* 
+ * Estilos para el evento hover de los elementos
+ * Especificidad -> (0,1,2)
+ */
+ul li:hover {
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+}
+  

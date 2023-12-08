@@ -1,0 +1,54 @@
+/*
+ * Autor: Martín Fernández González
+ * Fecha: 1 de Octubre de 2023
+ * Hoja de estilos en la que se definen los estilos del menú
+ */
+
+/* 
+ * Estilos para el contenedor nav
+ * Especificidad -> (0,0,1)
+ */
+nav {
+    background-color: #555;
+    color: white;
+    padding: 1em;
+    margin: 0 2em 1em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* 
+ * Estilos para los elementos a dentro del contenedor nav
+ * Especificidad -> (0,0,2)
+ */
+nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.625em 1.25em;
+    border-radius: 0.313em;
+    transition: background-color 0.3s;
+}
+
+/* 
+ * Estilos para el evento hover de los elementos a dentro del contenedor nav
+ * Especificidad -> (0,1,2)
+ */
+nav a:hover {
+    background-color: #FFB442;
+    color: #000;
+}
+
+@media screen and (max-width: 35.625em) {
+    nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(9.375em, 1fr));
+      gap: 0.625em;
+      width: 85%;
+    }
+}

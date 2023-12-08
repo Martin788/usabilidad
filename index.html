@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Martín Fernández González">
+    <meta name="description" content="Página de información personal sobre mi, fotos, videos y modo de contacto">
+    <meta name="keywords" content="Informática, Universidad de Oviedo, Desarrollador, Redes sociales">
+    
+    <!-- Título de la página -->
+    <title>Página web Martín Fernández González - Información personal</title>
+    
+    <!-- Estilos de la página -->
+    <link rel="stylesheet" href="estilos/grid_layout.css">
+    <link rel="stylesheet" href="estilos/nav.css">
+    <link rel="stylesheet" href="estilos/footer.css">
+    <link rel="stylesheet" href="estilos/estilo.css">
+
+    <!-- Archivos JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="search.js"></script>
+</head>
+<body>
+    <!-- Cabecera y título de la página -->
+    <header>
+        <h1>Sobre Mí</h1>
+
+        <!-- Formulario de búsqueda -->
+        <form id="search-form">
+            <input type="text" placeholder="Buscar...">
+            <button type="button" onclick="search()">Buscar</button>
+        </form>
+    </header>
+
+    <!-- Menú de la página -->
+    <nav>
+        <a href="index.html" accesskey="i">Inicio</a>
+        <a href="aficiones.html" accesskey="a">Aficiones</a>
+        <a href="musica.html" accesskey="m">Música</a>
+        <a href="series_y_cine.html" accesskey="s">Series y cine</a>
+    </nav>
+
+    <!-- Sección con una foto de perfil e información de contacto -->
+    <section>
+        <img src="multimedia/foto_perfil.jpg" alt="Foto de perfil Martín">
+
+        <h2>Modos de contacto</h2>
+        <ul>
+            <li>Móvil: 608 70 00 02</li>
+            <li>Correo universitario: <a href="uo277534@uniovi.es"> uo277534@uniovi.es </a></li>
+            <li>Correo personal: <a href="martinifg2001@gmail.com"> martinifg2001@gmail.com </a></li>
+        </ul>
+    </section>
+
+    <!-- Contenedor de las 2 secciones de texto con información personal -->
+    <main>
+        <!-- Primera sección con información acerca de mí a modo de introducción -->
+        <section>
+            <h2>Acerca de mí</h2>
+            <p>
+                Me llamo Martín Fernández González, tengo 22 años y nací en Oviedo el 8 de Junio de 2001. Cursé el Grado en Ingeniería Informática en la Universidad de Oviedo 
+                y actualmente estoy desarrollando mi trabajo de fin de grado en colaboración con la empresa Visionary a la vez que estoy cursando el primer año del Máster en 
+                Ingeniería Web en la propia Universidad de Oviedo.
+            </p>
+        </section>
+    
+        <!-- Segunda sección con información acerca de mi experiencia laboral -->
+        <section>
+            <h2>Mi experiencia laboral</h2>
+            <p>
+                Como experiencia laboral he trabajo 6 meses de prácticas en la empresa Inetum como desarrollador web. En el departamento en el que estuve asignado se utilizaba
+                una nueva tecnología llamada Outsystems. Outsystems es una plataforma de desarrollo low code que permite a las empresas desarrollar aplicaciones empresariales 
+                omnicanal y escribiendo la menor cantidad de código posible. Durante mi estancia en la empresa desarrollé 2 páginas web: La primera era una página web para
+                la promoción de eventos de diferentes categorías (deportivos, musicales...). La segunda página web era para la gestión de permisos de acceso de una empresa.
+            </p>
+        </section>
+    </main>
+
+    <!-- Pie de página con información de mis redes sociales y la última actualización de la página -->
+    <footer>
+        <p>Sígueme en mis redes sociales:</p>
+        <a href="https://www.linkedin.com/in/martin-fernandez-gonzalez/">
+            <img src="multimedia/logo_linkedin.png" alt="Logo de LinkedIn" > LinkedIn
+        </a>
+        <a href="https://github.com/Martin788">
+            <img src="multimedia/logo_github.png" alt="Logo de GitHub" > Github
+        </a>
+        <a href="https://www.instagram.com/martinfdeez88/">
+            <img src="multimedia/logo_instagram.jpg" alt="Logo de Instagram" > Instagram
+        </a>
+        <p>&copy; 2023 Martín Fernández González - Última actualización: Octubre 1, 2023</p>
+    </footer>
+</body>
+</html>

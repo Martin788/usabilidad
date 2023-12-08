@@ -1,0 +1,91 @@
+/*
+ * Autor: Martín Fernández González
+ * Fecha: 1 de Octubre de 2023
+ * Hoja de estilos en la que se define el layout de series_y_cine.html y musica.html
+ */
+
+/*
+ * Se define el número de filas y columnas que va a tener el grid layout
+ * Especificidad -> (0,0,1)
+ */
+body {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.25em;
+    
+}
+
+/*
+ * Se define el número de filas y columnas que va a ocupar el header
+ * Especificidad -> (0,0,1)
+ */
+header {
+    grid-row-start: 1;
+    grid-column-start: span 2;
+}
+
+/*
+ * Se define el número de filas y columnas que va a ocupar el header
+ * Especificidad -> (0,0,1)
+ */
+nav {
+    grid-row-start: 2;
+    grid-column-start: span 2;
+}
+
+/*
+ * Se define el número de filas y columnas que va a ocupar la primera section
+ * Especificidad -> (0,1,1)
+ */
+body section:first-of-type{
+    grid-row-start: 3;
+    grid-column-start: span 2;
+}
+
+/*
+ * Se define el número de filas y columnas que va a ocupar la segunda section
+ * Especificidad -> (0,1,1)
+ */
+section:nth-of-type(2){
+    grid-row-start: 4;
+    grid-column-start: 1;
+}
+
+/*
+ * Se define el número de filas y columnas que va a ocupar la tercera section
+ * Especificidad -> (0,1,1)
+ */
+section:nth-of-type(3){
+    grid-row-start: 4;
+    grid-column-start: 2;
+}
+
+/*
+ * Se define el número de filas y columnas que va a ocupar el footer
+ * Especificidad -> (0,0,1)
+ */
+footer {
+    grid-row-start: 5;
+    grid-column-start: span 2;
+}
+
+@media screen and (max-width: 81.25em){
+    section:nth-child(3) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+@media screen and (max-width: 80em){
+    body{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 90%;
+    }
+}
