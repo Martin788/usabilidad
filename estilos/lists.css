@@ -35,13 +35,4 @@ ul li:last-child {
     border-bottom: none;
 }
 
-/* 
- * Estilos para el evento hover de los elementos
- * Especificidad -> (0,1,2)
- */
-ul li:hover {
-    background-color: #f0f0f0;
-    color: #333;
-    cursor: pointer;
-}
   
