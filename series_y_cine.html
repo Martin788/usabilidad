@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Martín Fernández González">
     <meta name="description" content="Página de información sobre mis gustos en series y cine">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Series, Peliculas, Acción, Ranking">
     
     <!-- Título de la página -->   
     <title>Página web Martín Fernández González - Series y cine</title>
@@ -18,13 +18,8 @@
     <link rel="stylesheet" href="estilos/footer.css">
     <link rel="stylesheet" href="estilos/estilo.css">
 
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "k0owdhi2bv");
-</script>
+    <!-- Archivos JavaScript -->
+    <script src="menu.js"></script>
 </head>
 <body>
     <!-- Cabecera y título de la página -->
@@ -34,10 +29,10 @@
 
     <!-- Menú de la página -->
     <nav>
-        <a href="index.html" accesskey="i">Inicio</a>
-        <a href="aficiones.html" accesskey="a">Aficiones</a>
-        <a href="musica.html" accesskey="m">Música</a>
-        <a href="series_y_cine.html" accesskey="s">Series y cine</a>
+        <a href="index.html" target="_self">Inicio</a>
+        <a href="aficiones.html" target="_self">Aficiones</a>
+        <a href="musica.html" target="_self">Música</a>
+        <a href="series_y_cine.html" target="_self">Series y cine</a>
     </nav>
 
     <!-- Primera sección con información introductoria a mis gustos de cine y series -->
@@ -61,55 +56,55 @@
 
         <table>
             <caption>
-                <h4>Ranking series favoritas</h4>
+                <h3>Ranking series favoritas</h3>
             </caption>
             <tr>
-                <th>Título</th>
-                <th>Género</th>
-                <th>Estreno</th>
-                <th>Director</th>
-                <th>Reparto</th>
-                <th>Episodios</th>
+                <th scope="col" id="titulo">Título</th>
+                <th scope="col" id="genero">Género</th>
+                <th scope="col" id="estreno">Estreno</th>
+                <th scope="col" id="director">Director</th>
+                <th scope="col" id="reparto">Reparto</th>
+                <th scope="col" id="episodios">Episodios</th>
             </tr>
             <tr>
-                <td><a href="https://es.wikipedia.org/wiki/Prison_Break">Prison Break</a></td>
-                <td>Acción, drama y suspense</td>
-                <td>2005</td>
-                <td>Paul Scheuring</td>
-                <td>Wenworth Miller, Dominic Purcel, Sarah Wayne Callies</td>
-                <td>90</td>
+                <td headers="titulo"><a href="https://es.wikipedia.org/wiki/Prison_Break" target="_self">Prison Break</a></td>
+                <td headers="genero">Acción, drama y suspense</td>
+                <td headers="estreno">2005</td>
+                <td headers="director">Paul Scheuring</td>
+                <td headers="reparto">Wenworth Miller, Dominic Purcel, Sarah Wayne Callies</td>
+                <td headers="episodios">90</td>
             </tr>
             <tr>
-                <td><a href="https://es.wikipedia.org/wiki/Sons_of_Anarchy">Sons of Anarchy</a></td>
-                <td>Drama y crimen</td>
-                <td>2008</td>
-                <td>Kurt Sutter</td>
-                <td>Charlie Hunnam, Kim Coates, Katey Sagal</td>
-                <td>92</td>
+                <td headers="titulo"><a href="https://es.wikipedia.org/wiki/Sons_of_Anarchy" target="_self">Sons of Anarchy</a></td>
+                <td headers="genero">Drama y crimen</td>
+                <td headers="estreno">2008</td>
+                <td headers="director">Kurt Sutter</td>
+                <td headers="reparto">Charlie Hunnam, Kim Coates, Katey Sagal</td>
+                <td headers="episodios">92</td>
             </tr>
             <tr>
-                <td><a href="https://es.wikipedia.org/wiki/How_I_Met_Your_Mother">How i met your mother</a></td>
-                <td>Comedia</td>
-                <td>2005</td>
-                <td>Carter Bays</td>
-                <td>Josh Radnor, Neil Patrick Harris, Cobie Smulders</td>
-                <td>208</td>
+                <td headers="titulo"><a href="https://es.wikipedia.org/wiki/How_I_Met_Your_Mother" target="_self">How i met your mother</a></td>
+                <td headers="genero">Comedia</td>
+                <td headers="estreno">2005</td>
+                <td headers="director">Carter Bays</td>
+                <td headers="reparto">Josh Radnor, Neil Patrick Harris, Cobie Smulders</td>
+                <td headers="episodios">208</td>
             </tr>
             <tr>
-                <td><a href="https://es.wikipedia.org/wiki/Narcos">Narcos</a></td>
-                <td>Drogas y violencia</td>
-                <td>2015</td>
-                <td>Chris Brancato</td>
-                <td>Wagner Moura, Pedro Pascal, Boyd Holbrook</td>
-                <td>30</td>
+                <td headers="titulo"><a href="https://es.wikipedia.org/wiki/Narcos" target="_self">Narcos</a></td>
+                <td headers="genero">Drogas y violencia</td>
+                <td headers="estreno">2015</td>
+                <td headers="director">Chris Brancato</td>
+                <td headers="reparto">Wagner Moura, Pedro Pascal, Boyd Holbrook</td>
+                <td headers="episodios">30</td>
             </tr>
             <tr>
-                <td><a href="https://es.wikipedia.org/wiki/Fari%C3%B1a_(serie_de_televisi%C3%B3n)">Fariña</a></td>
-                <td>Drogas y violencia</td>
-                <td>2018</td>
-                <td>Ramón Campos</td>
-                <td>Javier Rey, Jana Perez, Tristán Ulloa</td>
-                <td>10</td>
+                <td headers="titulo"><a href="https://es.wikipedia.org/wiki/Fari%C3%B1a_(serie_de_televisi%C3%B3n)" target="_self">Fariña</a></td>
+                <td headers="genero">Drogas y violencia</td>
+                <td headers="estreno">2018</td>
+                <td headers="director">Ramón Campos</td>
+                <td headers="reparto">Javier Rey, Jana Perez, Tristán Ulloa</td>
+                <td headers="episodios">10</td>
             </tr>
         </table>
     </section>
@@ -120,55 +115,55 @@
 
         <table>
             <caption>
-                <h4>Ranking películas favoritas</h4>
+                <h3>Ranking películas favoritas</h3>
             </caption>
             <tr>
-                <th>Título</th>
-                <th>Género</th>
-                <th>Estreno</th>
-                <th>Director</th>
-                <th>Reparto</th>
-                <th>Duración</th>
+                <th scope="col" id="titulo">Título</th>
+                <th scope="col" id="genero">Género</th>
+                <th scope="col" id="estreno">Estreno</th>
+                <th scope="col" id="director">Director</th>
+                <th scope="col" id="reparto">Reparto</th>
+                <th scope="col" id="duracion">Duración</th>
             </tr>
             <tr>
-                <td><a href="https://es.wikipedia.org/wiki/Fast_Five">Fast and Furious 5</a></td>
-                <td>Acción</td>
-                <td>2011</td>
-                <td>Justin Lin</td>
-                <td>Vin Diesel, Paul Walker, Jordana Brewster</td>
-                <td>130m</td>
+                <td headers="titulo"><a href="https://es.wikipedia.org/wiki/Fast_Five" target="_self">Fast and Furious 5</a></td>
+                <td headers="genero">Acción</td>
+                <td headers="estreno">2011</td>
+                <td headers="director">Justin Lin</td>
+                <td headers="reparto">Vin Diesel, Paul Walker, Jordana Brewster</td>
+                <td headers="duracion">130m</td>
             </tr>
             <tr>
-                <td><a href="https://es.wikipedia.org/wiki/Avengers:_Endgame">Avengers: Endgame</a></td>
-                <td>Acción y ciencia ficción</td>
-                <td>2019</td>
-                <td>Anthony y Joe Russo</td>
-                <td>Robert Downey Jr, Chris Evans, Scarlett Johansson</td>
-                <td>182m</td>
+                <td headers="titulo"><a href="https://es.wikipedia.org/wiki/Avengers:_Endgame" target="_self">Avengers: Endgame</a></td>
+                <td headers="genero">Acción y ciencia ficción</td>
+                <td headers="estreno">2019</td>
+                <td headers="director">Anthony y Joe Russo</td>
+                <td headers="reparto">Robert Downey Jr, Chris Evans, Scarlett Johansson</td>
+                <td headers="duracion">182m</td>
             </tr>
             <tr>
-                <td><a href="https://es.wikipedia.org/wiki/Interstellar">Interstellar</a></td>
-                <td>Ciencia ficción y Aventura</td>
-                <td>2014</td>
-                <td>Christopher Nolan</td>
-                <td>Matthew McConaughey, Jessica Chastain, Anne Hathaway</td>
-                <td>169m</td>
+                <td headers="titulo"><a href="https://es.wikipedia.org/wiki/Interstellar" target="_self">Interstellar</a></td>
+                <td headers="genero">Ciencia ficción y Aventura</td>
+                <td headers="estreno">2014</td>
+                <td headers="director">Christopher Nolan</td>
+                <td headers="reparto">Matthew McConaughey, Jessica Chastain, Anne Hathaway</td>
+                <td headers="duracion">169m</td>
             </tr>
             <tr>
-                <td><a href="https://es.wikipedia.org/wiki/John_Wick:_Chapter_4">John Wick 4</a></td>
-                <td>Accion y supenso</td>
-                <td>2023</td>
-                <td>Chad Stalheski</td>
-                <td>Keanu Reeves, Donnie Yen, Scott Adkins</td>
-                <td>169m</td>
+                <td headers="titulo"><a href="https://es.wikipedia.org/wiki/John_Wick:_Chapter_4" target="_self">John Wick 4</a></td>
+                <td headers="genero">Accion y supenso</td>
+                <td headers="estreno">2023</td>
+                <td headers="director">Chad Stalheski</td>
+                <td headers="reparto">Keanu Reeves, Donnie Yen, Scott Adkins</td>
+                <td headers="duracion">169m</td>
             </tr>
             <tr>
-                <td><a href="https://es.wikipedia.org/wiki/Terminator_2:_el_juicio_final">Terminator 2</a></td>
-                <td>Accion y ciencia ficción</td>
-                <td>1991</td>
-                <td>James Cameron</td>
-                <td>Arnold Schuwarzeneger, Linda Hamilton, Edward Furlong</td>
-                <td>137m</td>
+                <td headers="titulo"><a href="https://es.wikipedia.org/wiki/Terminator_2:_el_juicio_final" target="_self">Terminator 2</a></td>
+                <td headers="genero">Accion y ciencia ficción</td>
+                <td headers="estreno">1991</td>
+                <td headers="director">James Cameron</td>
+                <td headers="reparto">Arnold Schuwarzeneger, Linda Hamilton, Edward Furlong</td>
+                <td headers="duracion">137m</td>
             </tr>
         </table>
     </section>
@@ -176,13 +171,13 @@
     <!-- Pie de página con información de mis redes sociales y la última actualización de la página -->
     <footer>
         <p>Sígueme en mis redes sociales:</p>
-        <a href="https://www.linkedin.com/in/martin-fernandez-gonzalez/">
+        <a href="https://www.linkedin.com/in/martin-fernandez-gonzalez/" target="_self">
             <img src="multimedia/logo_linkedin.png" alt="Logo de LinkedIn" > LinkedIn
         </a>
-        <a href="https://github.com/Martin788">
+        <a href="https://github.com/Martin788" target="_self">
             <img src="multimedia/logo_github.png" alt="Logo de GitHub" > Github
         </a>
-        <a href="https://www.instagram.com/martinfdeez88/">
+        <a href="https://www.instagram.com/martinfdeez88/" target="_self">
             <img src="multimedia/logo_instagram.jpg" alt="Logo de Instagram" > Instagram
         </a>
         <p>&copy; 2023 Martín Fernández González - Última actualización: Octubre 01, 2023</p>

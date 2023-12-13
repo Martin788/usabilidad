@@ -99,6 +99,7 @@ function search() {
      * Si es así, añadimos el resultado al array de resultados
      */
     $xml.find('page').each(function () {
+        
         const title = $(this).find('title').text().toLowerCase();
         const description = $(this).find('description').text().toLowerCase();
         const url = $(this).find('url').text();
@@ -110,8 +111,10 @@ function search() {
 
     // En el caso de que se haya encontrado algún resultado, redirigimos a la página donde se encuentra el primer resultado
     if (results.length > 0) {
+        console.log("Bien")
+        console.log(results[0].url)
         window.location.href = results[0].url;
     } else { // En el caso de que no se haya encontrado ningún resultado, mostramos un mensaje de alerta
-        alert('No se encontraron resultados.');
+        alert('No se encontraron resultados. Pruebe con otra palabra.');
     }
 }

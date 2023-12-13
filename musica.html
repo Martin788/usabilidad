@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Martín Fernández González">
     <meta name="description" content="Página de información sobre mis gustos musicales">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Musica, Reggaeton, Artistas, Canciones">
 
     <!-- Título de la página -->
     <title>Página web Martín Fernández González - Gustos musicales</title>
@@ -19,13 +19,8 @@
     <link rel="stylesheet" href="estilos/footer.css">
     <link rel="stylesheet" href="estilos/estilo.css">
 
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "k0owdhi2bv");
-</script>
+    <!-- Archivos JavaScript -->
+    <script src="menu.js"></script>
 </head>
 <body>
     <!-- Cabecera y título de la página -->
@@ -35,10 +30,10 @@
 
     <!-- Menú de la página -->
     <nav>
-        <a href="index.html" accesskey="i">Inicio</a>
-        <a href="aficiones.html" accesskey="a">Aficiones</a>
-        <a href="musica.html" accesskey="m">Música</a>
-        <a href="series_y_cine.html" accesskey="s">Series y cine</a>
+        <a href="index.html" target="_self">Inicio</a>
+        <a href="aficiones.html" target="_self">Aficiones</a>
+        <a href="musica.html" target="_self">Música</a>
+        <a href="series_y_cine.html" target="_self">Series y cine</a>
     </nav>
 
     <!-- Primera sección con información introductoria a mis gustos de musica -->
@@ -76,43 +71,43 @@
         
         <table>
             <caption>
-                <h4>Ranking canciones favoritas</h4>
+                <h3>Ranking canciones favoritas</h3>
             </caption>
             <tr>
-                <th><img src="multimedia/logo_spotify.png" alt="Logo de Spotify">Título</th>
-                <th>Autor</th>
-                <th>Año de lanzamiento</th>
-                <th>Género</th>
+                <th scope="col" id="titulo"><img src="multimedia/logo_spotify.png" alt="Logo de Spotify">Título</th>
+                <th scope="col" id="autor">Autor</th>
+                <th scope="col" id="lanzamiento">Año de lanzamiento</th>
+                <th scope="col" id="genero">Género</th>
             </tr>
             <tr>
-                <td><a href="https://open.spotify.com/intl-es/track/3v1dCP3hk2djfWryqfp7sx">Caminando por la vida</a></td>
-                <td>Melendi</td>
-                <td>2005</td>
-                <td>Pop rock español</td>
+                <td headers="titulo"><a href="https://open.spotify.com/intl-es/track/3v1dCP3hk2djfWryqfp7sx" target="_self">Caminando por la vida</a></td>
+                <td headers="autor">Melendi</td>
+                <td headers="lanzamiento">2005</td>
+                <td headers="genero">Pop rock español</td>
             </tr>
             <tr>
-                <td><a href="https://open.spotify.com/intl-es/track/77Ft1RJngppZlq59B6uP0z">Lose yourself</a></td>
-                <td>Eminem</td>
-                <td>2002</td>
-                <td>Hip hop y rap</td>
+                <td headers="titulo"><a href="https://open.spotify.com/intl-es/track/77Ft1RJngppZlq59B6uP0z" target="_self">Lose yourself</a></td>
+                <td headers="autor">Eminem</td>
+                <td headers="lanzamiento">2002</td>
+                <td headers="genero">Hip hop y rap</td>
             </tr>
             <tr>
-                <td><a href="https://open.spotify.com/intl-es/track/22skzmqfdWrjJylampe0kt">Can´t hold us</a></td>
-                <td>Macklemore y Ryan Lewis</td>
-                <td>2012</td>
-                <td>Hip hop</td>
+                <td headers="titulo"><a href="https://open.spotify.com/intl-es/track/22skzmqfdWrjJylampe0kt" target="_self">Can´t hold us</a></td>
+                <td headers="autor">Macklemore y Ryan Lewis</td>
+                <td headers="lanzamiento">2012</td>
+                <td headers="genero">Hip hop</td>
             </tr>
             <tr>
-                <td><a href="https://open.spotify.com/intl-es/track/1VB4sadHjFcFklHcZuoROi">Como camarón</a></td>
-                <td>Estopa</td>
-                <td>1999</td>
-                <td>Pop rock español</td>
+                <td headers="titulo"><a href="https://open.spotify.com/intl-es/track/1VB4sadHjFcFklHcZuoROi" target="_self">Como camarón</a></td>
+                <td headers="autor">Estopa</td>
+                <td headers="lanzamiento">1999</td>
+                <td headers="genero">Pop rock español</td>
             </tr>
             <tr>
-                <td><a href="https://open.spotify.com/intl-es/track/7lKP7GE00s56ude4dGvULy">Manicomio</a></td>
-                <td>Cosculluela</td>
-                <td>2016</td>
-                <td>Reggaeton</td>
+                <td headers="titulo"><a href="https://open.spotify.com/intl-es/track/7lKP7GE00s56ude4dGvULy" target="_self">Manicomio</a></td>
+                <td headers="autor">Cosculluela</td>
+                <td headers="lanzamiento">2016</td>
+                <td headers="genero">Reggaeton</td>
             </tr>
         </table>
     </section>
@@ -120,13 +115,13 @@
     <!-- Pie de página con información de mis redes sociales y la última actualización de la página -->
     <footer>
         <p>Sígueme en mis redes sociales:</p>
-        <a href="https://www.linkedin.com/in/martin-fernandez-gonzalez/">
+        <a href="https://www.linkedin.com/in/martin-fernandez-gonzalez/" target="_self">
             <img src="multimedia/logo_linkedin.png" alt="Logo de LinkedIn" > LinkedIn
         </a>
-        <a href="https://github.com/Martin788">
+        <a href="https://github.com/Martin788" target="_self">
             <img src="multimedia/logo_github.png" alt="Logo de GitHub" > Github
         </a>
-        <a href="https://www.instagram.com/martinfdeez88/">
+        <a href="https://www.instagram.com/martinfdeez88/" target="_self">
             <img src="multimedia/logo_instagram.jpg" alt="Logo de Instagram" > Instagram
         </a>
         <p>&copy; 2023 Martín Fernández González - Última actualización: Octubre 01, 2023</p>
