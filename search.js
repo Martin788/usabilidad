@@ -83,6 +83,17 @@ const searchIndex = `
     </sitemap>
 `;
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtén una referencia al botón de submit
+    var botonSubmit = document.querySelector('input[type="submit"]');
+
+    // Agrega un evento de clic al botón de submit
+    botonSubmit.addEventListener("click", function(event) {
+        event.preventDefault();
+        search();
+    });
+});
+
 function search() {
     var header = document.querySelector('header'); //Cogemos el header de la página
     var form = header.querySelector('form'); //A partir del header obtenemos el formulario
